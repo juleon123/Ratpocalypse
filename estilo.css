@@ -1,10 +1,5 @@
 
-    html {
-      margin: 0;
-      font-family: 'Courier New', monospace;
-      background-color: #111;
-      color: #271313;
-    }
+    
     .cover-section {
       width: 100vw;
       height: 100vh;
@@ -13,6 +8,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: 'fartage';
+    }
+    section{
+      font-family: 'fartage';
+    }
+    section h2{
+    color: #ff8383;
+    
+  }
+  section h3{
+    color: #ffc8c8;
+
+  }
+
+    .cuerpo{
+      background-color: #111;
+      font-family: 'fartage';
+      color: aliceblue;
+
+    }
+    @font-face {
+      font-family: 'fartage';
+      src: url(recursos/fonts/Fartage.ttf);
     }
     .cover-section h1 {
       color: white;
@@ -20,8 +38,17 @@
       background: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border: 2px solid #dc2626;
-      
     }
+    .navbar-brand{
+      background: url(recursos/ilustraciones/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+
+    }
+
     h2 {
       color: #dc2626;
       border-bottom: 1px solid #444;
@@ -39,9 +66,10 @@
       background-color: #111;
       color: #888;
     }
+
     .glow-text {
-    color: #fff;
-    text-shadow: 0 0 5px #ffcfcf, 0 0 10px #ff8787, 0 0 20px #ffb3b3;
+      color: #fff;
+      text-shadow: 0 0 5px #ffcfcf, 0 0 10px #ff8787, 0 0 20px #ffb3b3;
   }
  
   .btn-vermas {
@@ -55,6 +83,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .btn-vermas:hover {
@@ -64,4 +93,185 @@
   box-shadow: 0 0 10px #ff4d4d;
 }
 
+
+  .btn-vermas:hover {
+    background-color: #ff4d4d;
+    border-color: #ff9999;
+    color: #000;
+    box-shadow: 0 0 10px #ff4d4d;
+  }
+
+
+
+  .texm{
+    color: #888;
+  }
+#editorial p,
+#editorial ul,
+#editorial ol {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+#editorial h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+  .editorial-div{
+    margin: 20px 0px;
+  }
+
+  .ilustracion-img{
+    cursor: pointer;
+  }
   
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid #ff4d4d;
+  box-shadow: 0 0 30px #ff1a1a;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2100;
+}
+
+  
+.podcast-section {
+  background-color: #111;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.podcast-section h2 {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.podcast-section p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.podcast-section audio {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+
+.section-box {
+  background-color: #111;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.section-box h2 {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-box p,
+.section-box li {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+.section-box ul,
+.section-box ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Triángulo brillante */
+.play-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid #ff1a1a;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  margin: 40px auto;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff1a1a;
+  transition: transform 0.3s ease;
+}
+.play-triangle:hover {
+  transform: scale(1.1);
+}
+.sonido{
+  max-width: 100px;
+  cursor: pointer;
+
+}
+/* Modal de audio */
+.podcast-modal {
+  display: none; /* Se oculta por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.95);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  background-color: #180202f8;
+}
+
+.modal-content {
+  background-color: #111;
+  padding: 30px;
+  border: 2px solid #ff1a1a;
+  box-shadow: 0 0 10px #ff3333;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  
+}
+
+.modal-content audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+.close-modal {
+  color: #f15c5c;
+  font-size: 2rem;
+  cursor: pointer;
+  order: 2;
+
+}
+
